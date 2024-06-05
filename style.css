@@ -1,15 +1,70 @@
 body{
     background: rgb(2,0,36);
-background: linear-gradient(243deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(243deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    text-align: center;
+    background-color: azure;
+    position: absolute;
+    padding: 25px;
 }
 
-.information{
-    border: 2px solid black;
-    ZXtext-align: center;
+.information {
+    text-align: center;  
+    border: 1px solid black; 
+    border-radius: 5%;
+    margin-bottom: 1vh;
+    padding: 5px;
+}
+
+.information p{
+    text-align: start;
+    margin: 5px;
+}
+
+
+.send{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 1vh;
+}
+
+.radios{
+    /* border: 2px solid black; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.radios li{
+    display: flex; /* Activa el modelo de diseño Flexbox */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 10px; /* Agrega espacio alrededor del texto */ 
+    cursor: pointer;
+}
+
+.radios input[type="radio"] {
+    margin-right: 10px; /* Espacio entre los radios */
+  }
+
+.details p{
+    text-align: start;
+    padding: 5px;
+}
+
+.details{
+    margin-top: 1vh;
+    border: 1px solid black;
+    padding: 5px;
 }

@@ -11,27 +11,45 @@
         <div class="bar">
             <h1>Formulario</h1>
         </div>
-        <div class="container">
+    <div class="container">
             <div class="information">
                 <p>Nombre completo</p>
             <input type="text" id="nombre" placeholder="Nombre">
                 <p>Correo de contacto</p>
             <input type="email" name="correo" id="correo" placeholder="correoejemplo@gmail.com">
-            <button type="submit">Enviar</button>
+            <div class="send">
+                <button type="submit">Enviar</button>
             </div>
-        </div>
-        
-        <div class="radios">
+            
+    </div>
+
+        <ul class="radios">
+            <li>
+                <input type="radio" name="Queja" id="rr"> Queja
+            </li>
+            <li>
+                <input type="radio" name="Queja" id="rr"> Agendar
+            </li>
+            <li>
+                <input type="radio" name="Queja" id="rr"> Aclaracion
+            </li>
+        </ul>
+    
+    
+    <!-- <div class="radios">
                 <p>Queja</p>
             <input type="radio" name="Queja" id="Queja">
                 <p>Agendar cita</p>
             <input type="radio" name="Agendar" id="Agendar">
                 <p>Aclaración</p>
             <input type="radio" name="Aclaracion" id="Aclaracion">
-        </div>
+    </div> -->
         <div class="details">
+            <p>Comentarios</p>
             <textarea name="coment" id="comentario" rows="5" cols="30"></textarea>
         </div>
+    </div>
+
     </form>
     <footer>
         <div class="contact">
